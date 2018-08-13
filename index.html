@@ -10,39 +10,68 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <!-- <div id="layout" ></div> -->
-
-    <header class="container">
-        <img src="img/header/logo.png" alt="Trip XD">
-        <img src="img/header/menu.svg" alt="Menu">
-
-        <nav>
-            <div>
-                <a href="">Início</a>
-                <a href="">Apresentação</a>
-                <a href="">Benefícios</a>
-                <a href="">Ganhos</a>
-                <a href="">Adesão</a>
-                <a href="">Franquia</a>
-            </div>
-            <div class="buttons">
-                <button class="solid-orange">
-                    Faça Parte
-                </button>
-                <button class="solid-green">
-                    <img src="img/header/whatsapp.svg" alt="Whatsapp">
-                    Whatsapp
-                </button>
-            </div>
-            <select>
-                <option>Inglês</option>
-                <option>Português</option>
-            </select>
-        </nav>
-    </header>
-
     <section>
-        putz
+        <h2>Orçamento</h2>
+        
+        <form method="POST">
+            <div class="row">
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" name="nome">
+                </div>
+                
+                <div>
+                    <label>E-mail:</label>
+                    <input type="text" name="email">
+                </div>
+                
+                <div>
+                    <label>Telefone/Whatsapp:</label>
+                    <input type="text" name="telefone">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div>
+                    <label>Tipo da moto:</label>
+                    <select></select>
+                </div>
+
+                <input type="hidden" name="tipo">
+                
+                <div class="moto-info"></div>
+                
+            </div>
+            
+            <div class="row">
+                <div>
+                    <label>Origem:</label>
+                    <input type="text" name="origem">
+                </div>
+                
+                <div>
+                    <label>Destino:</label>
+                    <input type="text" name="destino">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div>
+                    <label>Data:</label>
+                    <input type="text" name="data">
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="flexibilidade">
+                    <span>Tenho flexibilidade</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <button>Enviar</button>
+            </div>
+        </form>
+        
     </section>
 </body>
 </html>
